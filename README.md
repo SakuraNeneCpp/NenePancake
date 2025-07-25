@@ -70,7 +70,7 @@ int main(int argc, char** argv){
 
 ### Tips
 テストケースの期待値を計算するときは対話モードのPythonやJuliaなどを使うと便利.
-```bash
+```
                _
    _       _ _(_)_     |  Documentation: https://docs.julialang.org
   (_)     | (_) (_)    |
