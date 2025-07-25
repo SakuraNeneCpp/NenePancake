@@ -105,6 +105,13 @@ inline std::string to_str(const L& l, const R& r) {
     if (_tt_fatal_) return;                                           \
 } while(0)
 
+#define TT_EXPECT_THROW(stmt) do {                 \
+    bool caught__ = false;                         \
+    try { (void)(stmt); }                          \
+    catch (...) { caught__ = true; }               \
+    TT_EXPECT_TRUE(caught__);                      \
+} while(0)
+
 //--------------------------------------
 // Base Test class (fixture support)
 //--------------------------------------
