@@ -6,7 +6,7 @@
 #include <cstring>
 
 #ifndef TT_ENABLE_COLOR
-#  define TT_ENABLE_COLOR 0        // 1で有効, 0で無効
+#  define TT_ENABLE_COLOR 1        // 1で有効, 0で無効
 #endif
 
 #ifdef _WIN32
