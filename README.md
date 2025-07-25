@@ -3,7 +3,6 @@ C++のテストフレームワークです.
 環境によってはセキュリティソフトにウイルスとして検出される場合があります. その場合は適宜スキャンを無効化してください.
 
 ```cpp
-#include <iostream>
 #include <NeneMath/FiniteField.hpp>
 #include <NenePancake/NenePancake.hpp>
 
