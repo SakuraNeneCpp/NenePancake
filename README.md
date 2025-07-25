@@ -80,9 +80,15 @@ int main(int argc, char** argv){
  _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release
 |__/                   |
 
-julia> 2^(31)-1
+julia> p = 2^(31)-1
 2147483647
 
 julia> a = 13523734547
 13523734547
+
+julia> b = 5293453
+5293453
+
+julia> (a+b)%p
+1529028000
 ```
