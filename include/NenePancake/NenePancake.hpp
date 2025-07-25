@@ -193,7 +193,7 @@ inline int RunAllTests(int argc, char** argv) {
         bool f = t.body();
         if (f) {
             ++failed;
-            std::cout << TT_CLR_RED << "[ FAILED  ] " << TT_CLR_RESET
+            std::cout << TT_CLR_RED << "[ FAILED   ] " << TT_CLR_RESET
                       << t.suite << "." << t.name << "\n";
         } else {
             std::cout << TT_CLR_GREEN << "[       OK ] " << TT_CLR_RESET
