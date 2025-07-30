@@ -66,10 +66,16 @@ inline void report(bool ok, const char* file, int line,
     if (fatal) current_fatal = true;
 }
 
+emplate<class V>
+inline std::string to_any_string(const V& v){
+    std::ostringstream oss;
+    oss << v;        // operator<< が定義されていれば OK
+    return oss.str();
+}
+
 template<class L, class R>
-inline std::string to_str(const L& l, const R& r) {
-    using std::to_string;
-    return std::string("lhs=") + to_string(l) + ", rhs=" + to_string(r);
+inline std::string to_str(const L& l, const R& r){
+    return "lhs=" + to_any_string(l) + ", rhs=" + to_any_string(r);
 }
 } // namespace detail
 
