@@ -66,7 +66,7 @@ inline void report(bool ok, const char* file, int line,
     if (fatal) current_fatal = true;
 }
 
-emplate<class V>
+template<class V>
 inline std::string to_any_string(const V& v){
     std::ostringstream oss;
     oss << v;        // operator<< が定義されていれば OK
